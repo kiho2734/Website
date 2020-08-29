@@ -5,147 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/f0d89b24e4.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
 
-    <title>Portfolio by Kiho Lee</title>
+    <title>Kiho Lee</title>
   </head>
   <body>
     <!-- Header starts -->
     <header>
-      <nav class="nav">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" class="logo-img"
-        /></a>
+      <div class="container">
+        <nav class="nav-bar">
+          <a href="#hero" class="logo"
+            ><img src="images/logo.png" alt="" class="logo-img"
+          /></a>
 
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolios" class="nav-link">Portfolios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
 
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </div>
-      </nav>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Header ends -->
 
     <!-- Hero starts -->
-    <section class="hero" id="hero">
+    <section id="hero">
       <div class="container">
-        <div class="headline">
-          <h1>
-            Hi,<br />
+        <div class="greeting-wrapper">
+          <h1 class="headline">
+            Hello,<br />
             I am
-            <span class="name">Kiho</span>
+            <span class="my-name">Kiho</span>
           </h1>
-          <h4>Front-end Developer</h4>
-          <a href="#" class="btn">Contact</a>
+          <h4 class="sub-headline">Web Developer</h4>
+          <a href="#portfolios" class="cta">Portfolios</a>
         </div>
       </div>
     </section>
     <!-- Hero ends -->
 
     <!-- About starts  -->
-    <section class="about">
+    <section id="about">
       <div class="container">
         <div class="global-headline">
-          <a href="#" class="body-btn">About</a>
+          <h2 class="title">About Me</h2>
         </div>
 
-        <div class="me">
-          <img src="images/me.jpg" alt="" class="me-img" />
-        </div>
+        <div class="content">
+          <div class="about-img-container">
+            <img src="images/my_img.jpg" alt="" class="about-img" />
+          </div>
 
-        <div class="about-description">
-          <h2 class="fullname">Kiho Lee</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            voluptatum amet consectetur temporibus autem corrupti vel
-            repudiandae esse nisi doloremque.
-          </p>
+          <div class="about-description-container description">
+            <h3 class="about-name">Kiho Lee</h3>
+            <p class="about-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati voluptatum amet consectetur temporibus autem corrupti
+              vel repudiandae esse nisi doloremque.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- About ends -->
 
     <!-- Skills starts -->
-    <section class="skills">
+    <section id="skills">
       <div class="container">
         <div class="global-headline">
-          <a href="#" class="body-btn">Skills</a>
+          <h2 class="title">Skills</h2>
         </div>
 
-        <div class="skills-description">
-          <h2 class="skills-description-headline">
-            Professional Skills
-          </h2>
-          <p class="description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            optio id vero amet. sit.
-          </p>
-        </div>
+        <div class="content">
+          <div class="skills-description-container description">
+            <h2 class="skills-description-headline">Professional Skills</h2>
+            <p class="skills-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati voluptatum amet consectetur temporibus autem corrupti
+              vel repudiandae esse nisi doloremque.
+            </p>
+          </div>
 
-        <div class="skills-chart">
-          <div class="skill-chart" id="html">
-            <i class="fab fa-html5"></i>
-            <h2 class="skill-name">HTML</h2>
-            <h2 id="html-percent">90%</h2>
+          <div class="skills-charts-container">
+            <div class="skill-chart">
+              <i class="fab fa-html5"></i>
+              <div class="skill-description">
+                <h4 class="skill-name">HTML</h4>
+                <h4 class="skills-percent">90%</h4>
+              </div>
+            </div>
+            <div class="percent-bar" id="html-percent-bar"></div>
+            <div class="skill-chart">
+              <i class="fab fa-css3-alt"></i>
+              <div class="skill-description">
+                <h4 class="skill-name">CSS</h4>
+                <h4 class="skills-percent">85%</h4>
+              </div>
+            </div>
+            <div class="percent-bar" id="css-percent-bar"></div>
+            <div class="skill-chart">
+              <i class="fab fa-js-square"></i>
+              <div class="skill-description">
+                <h4 class="skill-name">JS</h4>
+                <h4 class="skills-percent">80%</h4>
+              </div>
+            </div>
+            <div class="percent-bar" id="js-percent-bar"></div>
           </div>
-          <div class="skill-chart" id="css">
-            <i class="fab fa-css3"></i>
-            <h2 class="skill-name">CSS</h2>
-            <h2 id="css-percent">80%</h2>
-          </div>
-          <div class="skill-chart" id="js">
-            <i class="fab fa-js"></i>
-            <h2 class="skill-name">JS</h2>
-            <h2 id="js-percent">80%</h2>
-          </div>
+          <img src="images/skill_img.jpg" alt="" class="skills-img" />
         </div>
-
-        <img src="images/skill_img.jpg" alt="" class="skill-img" />
       </div>
     </section>
     <!-- Skill ends -->
 
     <!-- Portfolio starts -->
-    <section class="portfolio">
+    <section id="portfolios">
       <div class="container">
         <div class="global-headline">
-          <a href="#" class="body-btn">Portfolios</a>
+          <h2 class="title">Portfolios</h2>
         </div>
 
-        <div class="projects">
+        <div class="content">
           <div class="project">
-            <a href="#"><img src="images/portfolio_img1.jpg" alt="" /></a>
-            <p class="project-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-              quod repellendus impedit saepe.
-            </p>
+            <a href="#"
+              ><img src="images/project_one.jpg" alt="" class="project-img"
+            /></a>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
           </div>
           <div class="project">
             <a href="#"
-              ><img src="images/portfolio_img2.jpg" id="second-project"
+              ><img src="images/project_two.jpg" class="project-img"
             /></a>
-            <p class="project-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-              quod repellendus impedit saepe.
-            </p>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
           </div>
           <div class="project">
-            <a href="#"><img src="images/portfolio_img3.jpg" alt="" /></a>
-            <p class="project-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-              quod repellendus impedit saepe.
-            </p>
+            <a href="#"
+              ><img src="images/project_three.jpg" alt="" class="project-img"
+            /></a>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <a href="#"
+              ><img src="images/project_four.jpg" alt="" class="project-img"
+            /></a>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <a href="#"
+              ><img src="images/project_five.jpg" alt="" class="project-img"
+            /></a>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <a href="#"
+              ><img src="images/project_six.jpg" alt="" class="project-img"
+            /></a>
+            <div class="project-preview">
+              <h4 class="project-title">Project Title</h4>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati voluptatum amet consectetur temporibus autem corrupti
+                vel repudiandae esse nisi doloremque.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -153,31 +232,34 @@
     <!-- Portfolio ends -->
 
     <!-- Contact starts -->
-    <section class="contact">
+    <section id="contact">
       <div class="container">
         <div class="global-headline">
-          <a href="#" class="body-btn">Contact</a>
+          <h2 class="title">Contact</h2>
         </div>
 
         <form id="contact-form">
-          <label>Name :</label>
-          <input type="text" name="name" class="input" />
+          <select name="subjects" id="subjects">
+            <option value="" disabled selected hidden>Subject</option>
+            <option value="subject-project">About Project.</option>
+            <option value="subject-skill">About Skills.</option>
+            <option value="subject-me">About Me.</option>
+            <option value="subject-general-question">General Questions.</option>
+          </select>
 
-          <label>Subject :</label>
-          <input type="text" name="subject" class="input" />
+          <input type="text" name="name" class="input" placeholder="Name" />
 
-          <label>Email :</label>
-          <input type="email" name="email" class="input" />
+          <input type="email" name="email" class="input" placeholder="Email" />
 
-          <label>Message :</label>
           <textarea
             name="message"
             class="message"
-            cols="10"
+            cols="20"
             rows="10"
+            placeholder="Message"
           ></textarea>
 
-          <input type="submit" value="Send" id="submit-btn" />
+          <input type="submit" value="Send" id="submit-btn" class="cta" />
         </form>
       </div>
     </section>
@@ -186,17 +268,20 @@
     <!-- footer  starts -->
     <footer>
       <div class="container">
-        <h1>Kiho</h1>
+        <a href="#hero" class="logo"><img src="images/logo.png" alt="" /></a>
 
-        <div class="links">
+        <div class="footer-links">
           <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram-square"></i>
           <i class="fab fa-twitter-square"></i>
         </div>
 
-        <p>&copy; 2020 Kiho Lee</p>
+        <p class="footer-copyright">
+          Copyright &copy; 2020 Kiho Lee. All rights reserved.
+        </p>
       </div>
     </footer>
+    <!-- footer ends -->
 
     <!-- Main JS -->
     <script src="main.js"></script>
