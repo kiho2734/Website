@@ -379,11 +379,22 @@ footer .container {
 }
 
 .fa-instagram-square {
-  transition: color 0.5s;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-instagram-square:hover {
-  color: #e95950;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-twitter-square {
