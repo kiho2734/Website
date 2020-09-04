@@ -1,11 +1,20 @@
 // Click menu toggle
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-  document.querySelector(".nav-bar").classList.toggle("open");
-});
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".menu-nav");
+const menuBars = document.querySelector(".fa-bars");
+const menuTimes = document.querySelector(".fa-times");
+const navItems = document.querySelectorAll(".menu-nav__item");
+const personalLinks = document.querySelector(".personal-links");
 
-document.querySelector(".nav-list").addEventListener("click", function () {
-  document.querySelector(".nav-bar").classList.remove("open");
-});
+menuToggle.addEventListener("click", openMenu);
+navItems.forEach((item) => item.addEventListener("click", openMenu));
+
+function openMenu() {
+  menuBars.classList.toggle("open");
+  menuTimes.classList.toggle("open");
+  nav.classList.toggle("open");
+  personalLinks.classList.toggle("open");
+}
 
 // Smooth Scroll Function
 function smoothScroll(target, duration) {

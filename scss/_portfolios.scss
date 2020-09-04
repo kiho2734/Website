@@ -1,0 +1,38 @@
+.project {
+  margin-bottom: 5rem;
+  box-shadow: 7px 10px 10px rgba(44, 44, 44, 0.466);
+  padding-bottom: 1rem;
+
+  &:last-of-type {
+    margin-bottom: initial;
+  }
+
+  &__img {
+    background: #000;
+  }
+
+  &__preview {
+    margin: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $secondary-font-color;
+    }
+  }
+
+  &__links {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &-link {
+      color: $secondary-font-color;
+      @include transition-color;
+    }
+  }
+}

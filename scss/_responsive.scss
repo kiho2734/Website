@@ -1,0 +1,213 @@
+@include media-small {
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .cta {
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 5% 10%;
+  }
+
+  .nav-link {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 7px;
+  }
+
+  .menu-toggle {
+    font-size: 4rem;
+    padding-right: 4rem;
+  }
+
+  .open {
+    .menu-toggle {
+      right: -1.5rem;
+      font-size: 5rem;
+    }
+  }
+
+  .greeting-wrapper {
+    font-size: 4.5rem;
+
+    .headline {
+      line-height: 8rem;
+      margin-bottom: 1rem;
+
+      .my-name {
+        font-size: 8rem;
+      }
+    }
+
+    .sub-headline {
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .about-name {
+    font-size: 4.5rem;
+  }
+
+  #submit-btn {
+    font-size: 2rem;
+  }
+
+  .footer-links {
+    font-size: 4.5rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.5rem;
+  }
+}
+
+@include media-medium {
+  .global-headline {
+    margin-bottom: 8rem;
+    font-size: 4rem;
+  }
+
+  .content {
+    margin-bottom: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-list {
+    background-color: initial;
+    position: relative;
+    top: -0.5rem;
+    margin-right: 2rem;
+    width: 70vw;
+    height: initial;
+    padding: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: initial;
+    transition: initial;
+
+    .active {
+      padding-bottom: 0.5rem;
+      border-bottom: solid 3px;
+    }
+  }
+
+  .nav-link {
+    color: $secondary-font-color;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $primary-font-color;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .greeting-wrapper {
+    .headline {
+      margin-bottom: 2rem;
+    }
+
+    .sub-headline {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .about-img-container {
+    margin: auto auto;
+  }
+
+  .about-description-container {
+    .about-name {
+      font-size: 6rem;
+    }
+  }
+
+  .skills-charts-container {
+    padding: 2rem 0;
+  }
+
+  .skills-img {
+    display: none;
+  }
+
+  .project {
+    .project-img {
+      height: 250px;
+    }
+
+    .project-description {
+      font-size: 1.6rem;
+      padding: 0 2rem;
+    }
+  }
+
+  #contact-form {
+    text-align: center;
+
+    #subjects,
+    .input,
+    .message {
+      margin-bottom: 3rem;
+      width: 50vw;
+    }
+
+    .message {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    #submit-btn {
+      width: 12vw;
+      margin-right: 42%;
+    }
+  }
+
+  footer {
+    .container {
+      padding: 5rem 0 3rem 0;
+    }
+
+    .logo {
+      width: 25%;
+    }
+
+    .footer-links {
+      width: 30%;
+      justify-content: space-around;
+      font-size: 5rem;
+      margin: 3rem 0;
+    }
+
+    .footer-copyright {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include media-large {
+}

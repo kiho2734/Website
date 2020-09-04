@@ -1,0 +1,10 @@
+footer {
+  background: darken($secondary-font-color, 47%);
+  color: lighten($secondary-font-color, 47%);
+  padding: 2rem;
+  margin-top: 4rem;
+
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}

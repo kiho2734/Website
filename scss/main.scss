@@ -1,0 +1,67 @@
+@import "config";
+@import "hero";
+@import "nav";
+@import "about";
+@import "skills";
+@import "portfolios";
+@import "contact";
+@import "footer";
+@import "responsive";
+
+html {
+  font: {
+    family: $main-font;
+    size: 10px;
+  }
+  color: $primary-font-color;
+  background-color: $bg-color;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+a {
+  color: $secondary-font-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font: {
+    size: 1.5rem;
+    weight: 400;
+  }
+  line-height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+  @include flexbox(column);
+
+  .global-headline {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    color: $secondary-font-color;
+    border-bottom: solid 4px $secondary-font-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .content {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+}

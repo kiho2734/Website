@@ -1,0 +1,12 @@
+.about-img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  &__name {
+    font-size: 3rem;
+    color: $secondary-font-color;
+    margin-bottom: 1rem;
+  }
+}

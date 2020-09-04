@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$main-font: "Montserrat", sans-serif;
+$bg-color: #fff;
+$primary-font-color: #000;
+$secondary-font-color: #2c9ffd;
+$hover-font-color: #ff5733;
+$hover-background-color: #ff5733;
+$button-font-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexbox($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin transition-color($color: $hover-font-color) {
+  transition: color 0.5s;
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin media-small {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

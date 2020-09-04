@@ -1,0 +1,51 @@
+#hero {
+  .container {
+    min-height: 100vh;
+  }
+}
+
+.greeting-wrapper {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+
+  &__name {
+    letter-spacing: 3px;
+    color: $secondary-font-color;
+  }
+
+  &__name--sub {
+    font: {
+      size: 2rem;
+      weight: 300;
+    }
+  }
+}
+
+.personal-links {
+  position: absolute;
+  left: 2rem;
+  top: 80vh;
+  @include flexbox(column);
+  font-size: 3.5rem;
+  cursor: pointer;
+
+  &.open {
+    display: none;
+  }
+
+  .fa-github-square {
+    @include transition-color(#6e5494);
+  }
+
+  .fa-facebook-square {
+    @include transition-color(#229bff);
+  }
+
+  .fa-instagram-square {
+    @include transition-color(#fd5949);
+  }
+
+  .fa-twitter-square {
+    @include transition-color(#00acee);
+  }
+}
